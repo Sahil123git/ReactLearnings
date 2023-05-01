@@ -1,0 +1,11 @@
+.buttonStyle {
+  background-color: rgba(71, 53, 53, 0.813);
+  color: azure;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+.buttonStyle:hover {
+  background-color: azure;
+  color: rgba(71, 53, 53, 0.813);
+}

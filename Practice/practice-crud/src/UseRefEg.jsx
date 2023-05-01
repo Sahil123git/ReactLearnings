@@ -17,21 +17,22 @@ const UseRefEg = () => {
 
   return (
     <div>
+      <h1>UseRefEg</h1>
       {(() => {
         console.log("Printing on console");
         return <p>Some content</p>;
       })()}
 
-      <h1>{val}</h1>
+      <h3>{val}</h3>
 
       {(() => {
         console.log("useRef count");
-        return <h2>Previous count: {prevCountRef.current}</h2>;
+        return <h3>Previous count: {prevCountRef.current}</h3>;
       })()}
 
       {(() => {
         console.log("count useState");
-        return <h1>Count: {count}</h1>;
+        return <h3>Count: {count}</h3>;
       })()}
 
       <button

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 const UseRefEg2 = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const renderCount = useRef(0);
 
   useEffect(() => {
@@ -11,13 +11,18 @@ const UseRefEg2 = () => {
   });
 
   const handleClick = () => {
-    setCount(count + 1);
+    console.log("From handle Click");
+    setCount(count + 1); //after this go and complete return() first then only useEffect
   };
 
   return (
     <div>
       <p>Count: {count}</p>
       <button onClick={handleClick}>Increment</button>
+      {(() => {
+        console.log("Some Content");
+        return <p>Some content</p>;
+      })()}
       <p> {`Rendered: ${renderCount.current} times`}</p>
     </div>
   );

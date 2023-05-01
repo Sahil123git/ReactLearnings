@@ -7,7 +7,7 @@ function Child() {
   // user = useContext(MyContext);
   return (
     <div>
-      <h1>From Grand Child {user}</h1>
+      <h3>From Grand Child {user}</h3>
     </div>
   );
 }
