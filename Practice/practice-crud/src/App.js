@@ -40,7 +40,7 @@ function App() {
 
       <SearchFeature api={api} />
 
-      <h1>useContext Eg Hello {user}</h1>
+      <h1>useContext and CSS in React. Eg Hello {user}</h1>
       <MyContext.Provider value={{ user, setUser, func }}>
         <UseContextEg />
       </MyContext.Provider>

@@ -5,6 +5,7 @@ import styles from "./UseContext.module.css";
 
 const UseContextEg = () => {
   const { user, setUser, func } = useContext(MyContext);
+  //internal css
   const containerStyle = {
     backgroundColor: "lightblue",
     padding: "10px",

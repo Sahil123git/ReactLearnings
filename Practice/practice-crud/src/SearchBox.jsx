@@ -5,12 +5,16 @@ const SearchBox = ({ onSearch }) => {
 
   const handleSearch = (e) => {
     const query = e.target.value;
+    // console.log(e.target.placeholder);
     setSearch(query);
     onSearch(query);
+    
+    
   };
 
   return (
     <div>
+    
       <input
         type="text"
         placeholder="search..."
@@ -22,3 +26,4 @@ const SearchBox = ({ onSearch }) => {
 };
 
 export default SearchBox;
+
